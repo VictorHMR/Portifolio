@@ -1,0 +1,27 @@
+var i = 0;
+function move() {
+    
+  if (i == 0) {
+    i = 15;
+    var elem = document.getElementById("myBar");
+    var width = 15;
+    var id = setInterval(frame, 15);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%"
+      }
+    }
+  }
+}
+
+
+
+  
+  
+
+
