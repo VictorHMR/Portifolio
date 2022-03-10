@@ -1,5 +1,5 @@
 main {
-  background: url(../img/Bg.jpg) no-repeat center center;
+  background: linear-gradient(to bottom, transparent 0%, rgb(32, 32, 32) 105%), url(../img/Bg.jpg) no-repeat center center;
   opacity: 1;
   background-size: cover;
   background-color: black;
@@ -10,7 +10,8 @@ main {
 
 .MainText {
   margin-left: 20vw;
-  padding-top: 30vh;
+  position: relative;
+  top: 210px;
 }
 .MainText h1 {
   font-size: 60px;
@@ -23,6 +24,7 @@ main {
   font-size: 25px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  margin-right: 20px;
 }
 .directionbutton {
   position: fixed;
@@ -36,6 +38,7 @@ main {
   max-height: fit-content;
   background-color: rgb(32, 32, 32);
   text-align: center;
+  padding-bottom: 70px;
 }
 
 @media (max-width: 999px) {
@@ -85,34 +88,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-/*---------------------------------------Projetos------------------------------------*/
-.projectBox {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projectNav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 8vh;
-}
-
-.ProjectBox{
-  width: 200px;
-  height: 200px;
-  text-align: center;
-
-
-}
-.projectBox img{
-  margin-top: 20px;
-  width: 70%;
-  height: 70%;
-}
 /*---------------------------------------Skill------------------------------------*/
 .Container02{
   display: grid;
@@ -128,17 +103,20 @@ h5 {
   text-align: center;
   z-index: 0;
   min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.404);
 }
 .skillsIcon{
   position: relative;
-  margin-left: 10px;
-  
+  margin-left: 3px;
+  margin-right: 3px;  
 }
 .BorderBox ul{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   margin-bottom: 30px;
+  padding-right: 15px;
+
 }
 .BorderBox li{
   letter-spacing: 3px;
@@ -148,13 +126,17 @@ h5 {
 
 #skills{
   background-color: black;
+  background:  linear-gradient(to bottom, transparent 0%, rgb(32, 32, 32) 100%), linear-gradient(to top, transparent 0%, rgb(32, 32, 32) 100%), url(../img/bd02.jpg)no-repeat center center;
+  background-size: cover;
+}
+#sobre{
 }
 @media(max-width: 999px){
   
 .skillsIcon{
     position: relative;
     margin-left: 10px;
-    max-width: 30%;
+    max-width: 25%;
     
   }
   .SobreText {
