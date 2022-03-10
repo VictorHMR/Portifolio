@@ -1,0 +1,169 @@
+main {
+  background: url(../img/Bg.jpg) no-repeat center center;
+  opacity: 1;
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+  z-index: 0;
+  color: aliceblue;
+}
+
+.MainText {
+  margin-left: 20vw;
+  padding-top: 30vh;
+}
+.MainText h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.MainText p {
+  color: rgb(223, 163, 210);
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.directionbutton {
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
+  font-size: 40px;
+}
+
+.ItemBox {
+  min-height: 102vh;
+  max-height: fit-content;
+  background-color: rgb(32, 32, 32);
+  text-align: center;
+}
+
+@media (max-width: 999px) {
+  .MainText {
+    margin-left: 20vw;
+    padding-top: 5vh;
+  }
+}
+
+/*-----------------------------------Sobre-------------------------------------------------------------*/
+.number1 {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(231, 143, 158);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-align: center;
+}
+.SobreDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+.SobreImg img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.SobreText {
+  text-align: left;
+}
+h5 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+.SobreText h6 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/*---------------------------------------Projetos------------------------------------*/
+.projectBox {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectNav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+
+.ProjectBox{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+
+
+}
+.projectBox img{
+  margin-top: 20px;
+  width: 70%;
+  height: 70%;
+}
+/*---------------------------------------Skill------------------------------------*/
+.Container02{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 80%;
+  grid-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.BorderBox{
+  border: 2px solid rgb(231, 143, 158);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 0;
+  min-height: 300px;
+}
+.skillsIcon{
+  position: relative;
+  margin-left: 10px;
+  
+}
+.BorderBox ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-bottom: 30px;
+}
+.BorderBox li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+  margin-top: 30px;
+}
+
+#skills{
+  background-color: black;
+}
+@media(max-width: 999px){
+  
+.skillsIcon{
+    position: relative;
+    margin-left: 10px;
+    max-width: 30%;
+    
+  }
+  .SobreText {
+    text-align: center;
+  }
+  .SobreImg img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+  }
+}
