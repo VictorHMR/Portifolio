@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 main {
   background: linear-gradient(to bottom, transparent 0%, rgb(32, 32, 32) 105%), url(../img/Bg.jpg) no-repeat center center;
   opacity: 1;
@@ -126,10 +129,8 @@ h5 {
 
 #skills{
   background-color: black;
-  background:  linear-gradient(to bottom, transparent 0%, rgb(32, 32, 32) 100%), linear-gradient(to top, transparent 0%, rgb(32, 32, 32) 100%), url(../img/bd02.jpg)no-repeat center center;
+  background:  linear-gradient(to bottom, transparent 0%, rgb(32, 32, 32) 100%), linear-gradient(to top, transparent 0%, rgb(32, 32, 32) 100%), url(../img/Bg02.jpg)no-repeat center center;
   background-size: cover;
-}
-#sobre{
 }
 @media(max-width: 999px){
   
@@ -148,4 +149,67 @@ h5 {
     border-radius: 50%;
     margin-top: 50px;
   }
+}
+/*----------------------------Experiencia------------------------------------*/
+#exp{
+  background:  linear-gradient(to bottom, transparent 0%, rgb(32, 32, 32) 100%), linear-gradient(to top, transparent 0%, rgb(32, 32, 32) 100%), url(../img/Bg03.jpg)no-repeat center center;
+
+}
+.ExperienceBox{
+  border: 2px solid rgb(231, 143, 158);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 0;
+  min-width: 312px;
+  min-height: 400px;
+  perspective: 1000px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.404);
+  transition: transform .5s;
+  transform-style: preserve-3d;
+}
+.ExpSide1{
+  height: 100%;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.ExpSide2{
+  transform: rotateY(180deg);
+  width: 100%;
+  border-radius: 10px;
+}
+.ExperienceBox:hover{
+  transform: rotateY(180deg);
+}
+.ExpSide1, .ExpSide2 {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  z-index: -1;
+}
+.CoteIcon{
+  width: 200px;
+  display: block;
+  margin-top: 42%;
+  margin-left: auto;
+  margin-right: auto 
+}
+.ExpTitle{
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.ExpSubTitle{
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-weight: bold;
+
+}
+.ExpText{
+  margin-left: 10%;  
+  margin-right: 10%;
+  text-align: left;
 }
