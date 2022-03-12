@@ -1,5 +1,6 @@
 header{
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 99;
 }
@@ -15,7 +16,8 @@ a:hover {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-right: 25%;
+  position: absolute;
+  left: 50px;
 }
 nav {
   display: flex;
@@ -27,6 +29,8 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+  position: absolute;
+  right: 60px;
 }
 .nav-list li {
   letter-spacing: 3px;
@@ -68,6 +72,8 @@ nav {
     }
     .mobile-menu{
         display: block;
+        position: absolute;
+        right: 20px;
     }
     .nav-list.active{
         transform: translateX(0) ;
